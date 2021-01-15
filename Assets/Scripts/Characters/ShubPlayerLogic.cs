@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ShubPlayerLogic : AbstractCharacterLogic
+public class ShubPlayerLogic : MonoBehaviour
 {
-
-    public int PlayerStatus = Status.NONE;
+    // player actual state.
+    public int playerStatus = Status.NONE;
 
     void Start()
     {
@@ -14,6 +12,5 @@ public class ShubPlayerLogic : AbstractCharacterLogic
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
