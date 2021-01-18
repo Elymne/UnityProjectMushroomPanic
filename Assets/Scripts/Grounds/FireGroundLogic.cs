@@ -2,20 +2,9 @@
 
 public class FireGroundLogic : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    { 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.name == "ShubPlayer")
+        if (collision.gameObject.name == ShubType.SHUB_PLAYER)
         {
             collision.gameObject.GetComponent<ShubPlayerLogic>().playerStatus = Status.ON_FIRE;
             Debug.Log("Player enter in status : " + Status.ON_FIRE);

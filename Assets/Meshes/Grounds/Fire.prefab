@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 2395085048151777270}
   - component: {fileID: 2828698780857236807}
   m_Layer: 0
-  m_Name: Hitbox
+  m_Name: FireHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -9,8 +9,17 @@ public class ShubPlayerLogic : MonoBehaviour
     {
     }
 
-    // Update is called once per frame
+    // Update is called once per frame.
     void Update()
     {
+
     }
+
+    // Ici, on va gérer les contacts entre le joueur et les différents éléments du jeu.
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.gameObject.name);
+
+    }
+
 }
