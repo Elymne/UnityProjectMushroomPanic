@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1748317834380169532}
   - component: {fileID: 4794681675768841289}
   - component: {fileID: 4134511143823018303}
-  - component: {fileID: 5029075047360437757}
   - component: {fileID: -4136153910146663554}
   m_Layer: 0
   m_Name: ShubEnnemy
@@ -95,19 +94,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5029075047360437757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4405690392467614754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d59b40546107e7c43afb37b81a523179, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ennemyStatus: 0
 --- !u!54 &-4136153910146663554
 Rigidbody:
   m_ObjectHideFlags: 0

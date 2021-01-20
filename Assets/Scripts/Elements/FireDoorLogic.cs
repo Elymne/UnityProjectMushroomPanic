@@ -11,20 +11,23 @@ public class FireDoorLogic : MonoBehaviour
             switch(collision.gameObject.GetComponent<ShubPlayerLogic>().playerStatus)
             {
                 case Status.ON_WATER:
-                    Debug.Log("Destruction de la porte en feu.");
+                    Debug.Log("Player has destroyed the fire door.");
                     Destroy(gameObject);
                     Debug.Log("Player enter in status : " + Status.NONE);
                     collision.gameObject.GetComponent<ShubPlayerLogic>().playerStatus = Status.NONE;
                     break;
                 case Status.ON_FIRE:
-                    Debug.Log("Tu passeras pas mon gros.");
+                    Debug.Log("Player can't pass through.");
+                    var lastPlayerPosition = collision.gameObject.GetComponent<Controller>();
+                    lastPlayerPosition.lastPlayerPosition.SetReversePosition(lastPlayerPosition.transform);
                     break;
                 case Status.NONE:
-                    Debug.Log("T'es mort brûlé ducoup haha..");
+                    //TODO Création d'une classe de gameover.
+                    Debug.Log("Player is dead");
                     Destroy(collision.gameObject);
                     break;
                 default:
-                    Debug.Log("Alors là, wtf mon gars.");
+                    Debug.Log("Undefined collision.");
                     break;
             }
 
