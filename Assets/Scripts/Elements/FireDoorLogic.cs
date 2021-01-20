@@ -4,7 +4,6 @@ public class FireDoorLogic : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        // si le joueur à le bon état, on détruit la porte.
         if(collision.gameObject.name == ShubType.SHUB_PLAYER)
         {
 
@@ -33,7 +32,4 @@ public class FireDoorLogic : MonoBehaviour
 
         }
     }
-
-    
-
 }
