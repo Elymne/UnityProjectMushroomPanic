@@ -2,11 +2,11 @@
 
 public class FireDoorLogic : MonoBehaviour
 {
+
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.name == ShubType.SHUB_PLAYER)
         {
-
             switch(collision.gameObject.GetComponent<ShubPlayerLogic>().playerStatus)
             {
                 case Status.ON_WATER:
@@ -29,7 +29,6 @@ public class FireDoorLogic : MonoBehaviour
                     Debug.Log("Undefined collision.");
                     break;
             }
-
         }
     }
 }
